@@ -1,0 +1,146 @@
+#a {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center; 
+    align-items: center;      
+    width: 2000px;
+    height: 1000px;
+    background-color: #111722;
+}
+
+#b {
+    width: 800px;
+    height: 500px;
+    background-color: #171F2B;
+    box-shadow: 5px 5px 15px grey;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border:2px solid black;     /* Changed from margin:100px to just bottom spacing */
+}
+
+#c {
+    width: 800px;
+    height: 100px;
+    background-color: #090E16;
+    border-radius:20px;
+    text-align:center;
+    color:white;
+    
+    
+}
+#nine{
+    width:60px;
+    height:60px;
+    background-color:	#283241;
+    color:white;
+    border: 2px solid	#465264;
+    box-shadow:	#05080D;
+    cursor:pointer;
+    border-radius:10px;
+    margin-left: 500px;
+    margin-top:50px;
+
+}
+#eight{
+    width:60px;
+    height:60px;
+    background-color:	#283241;
+    color:white;
+    border:2px solid	#465264;
+    box-shadow:	#05080D;
+    cursor:pointer;
+    border-radius:10px;
+    margin-left: 500px;
+    margin-top:50px;
+
+}
+
+#seven{
+    width:60px;
+    height:60px;
+    background-color:	#283241;
+    color:white;
+    border: 2px solid	#465264;
+    box-shadow:	#05080D;
+    cursor:pointer;
+    border-radius:10px;
+    margin-left: 500px;
+    margin-top:50px;
+
+}
+#six{
+       width:60px;
+    height:60px;
+    background-color:	#283241;
+    color:white;
+    border: 2px solid	#465264;
+    box-shadow:	#05080D;
+    cursor:pointer;
+    border-radius:10px;
+    margin-top:0;
+}
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.number {
+    height: 60px;
+    background-color: #283241;
+    color: white;
+    border: 2px solid #465264;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.number:hover{
+    transform:scale(1.05);
+
+}
+#btn{
+      height: 60px;
+    background-color: #283241;
+    color: white;
+    border: 2px solid #465264;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+#btn:hover{
+    transform:scale(1.05);
+    transition:0.2s;
+
+}
+#btns{
+ display:flex;
+ justify-content:center;
+ gap:20px;
+ transform:scale(1.05);
+}
+.operators{
+    height: 60px;
+    width:60px;
+    background-color: #283241;
+    color: white;
+    border: 2px solid #465264;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.operators:hover,
+.number:hover,
+#btn:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}

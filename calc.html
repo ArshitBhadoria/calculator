@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel = "stylesheet" href = "calc.css">
+    </head>
+    <body>
+        <div id = "a">
+            <div id ="b">
+                <div id = "c">
+
+                </div>
+              <div id="buttons">
+   <button><div class="number">9</div></button> 
+    <button><div class="number">8</div></button> 
+    <button><div class="number">7</div></button> 
+    <button><div class="number">6</div></button> 
+    <button><div class="number">5</div></button> 
+    <button><div class="number">4</div></button> 
+    <button><div class="number">3</div></button> 
+    <button><div class="number">2</div></button> 
+    <button><div class="number">1</div></button> 
+    <button><div class="number">0</div></button> 
+    <button type = "submit" id = "btn">Calculate</button>
+</div>
+<hr>
+<div id = "btns">
+    <button><div class = "operators">+</div></button>
+  <button>  <div class = "operators">-</div></button>
+    <button><div class = "operators">*</div></button>
+    <button><div class = "operators">/</div></button>
+    <button><div class = "operators">%</div></button>
+    <button><div class = "operators">#</div></button>
+    
+</div>
+
+
+            </div>
+
+        </div>
+        <script>
+         
+
+
+let operators = document.getElementsByClassName("operators");
+let panel = document.getElementById("c");
+
+let numbers = document.getElementsByClassName("number");
+
+for (let i = 0; i < numbers.length; i++) {
+
+    numbers[i].addEventListener("click", function() {
+
+        panel.innerText += this.innerText;
+
+    });
+
+}
+for(let i = 0 ; i < operators.length ;i++){
+    operators[i].addEventListener("click" ,function(){
+        panel.innerText += this.innerText;
+
+    });
+}
+let calculate = document.getElementById("btn");
+
+calculate.addEventListener("click", function() {
+
+    let expression = panel.innerText;
+
+    let result = eval(expression);
+
+    panel.innerText = result;
+
+});
+</script>
+</body>
+</html>
